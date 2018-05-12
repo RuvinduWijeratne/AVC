@@ -105,15 +105,15 @@
 	}
 	if (error > 0 )	//error is a + value when white line is to the right. Hence turn right
 	{
-		set_motor(1, vgo_m1 + dv);
-		set_motor(2, vgo_m2 - dv);
+		set_motor(1, vgo_m1 - dv);
+		set_motor(2, vgo_m2 + dv);
 		sleep1(10,0);
 		
 	}
 	if (error == 0) //error is 0 when white line exactly in the center. Hence go straight 
 	{
-		set_motor(1, vgo_m1 + dv);
-		set_motor(2, vgo_m2 - dv);
+		set_motor(1, vgo_m1);
+		set_motor(2, vgo_m2;
 		sleep1(10,0);
 		
 	}
